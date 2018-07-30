@@ -1,35 +1,11 @@
-.draggable-item{
-    background-color: black;
-    border: 1px black solid;
-    text-align: center;
-    margin: 10px;
-    display: inline-block;
-    top: 5px;
-    left: 5px;
-    height: 140px;
-    width: 140px;
+body{
+   background-image: url("http://4.bp.blogspot.com/-zhybbt13LwA/Uh8ptePt-sI/AAAAAAAABPk/VKG_5nO5Zm4/s1600/Background-X-Repeat2.jpg");
+   background-repeat: repeat; 
 }
-.container{
-    background-color: blueviolet;
-    border: 1px dotted black;
-    height: 160px;
-    margin: 10px;
-    width: 160px;
-
-}
-.hold{
-    border: blueviolet solid 4px;
-
-}
-.hovered{
-    background-color: brown;
-    border-style: dashed;
-}
-.invisible{
-    display: none;
-}
-#elementImg1{
-    height: 5px;
-    width: 5px;
-
+.image-heigh{
+    height: 15rem;
+    margin: 0;
+    padding: 5px;
+    width: 
+    
 }
