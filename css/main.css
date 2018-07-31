@@ -1,11 +1,55 @@
 body{
-   background-image: url("http://4.bp.blogspot.com/-zhybbt13LwA/Uh8ptePt-sI/AAAAAAAABPk/VKG_5nO5Zm4/s1600/Background-X-Repeat2.jpg");
-   background-repeat: repeat; 
+    background-color: black;
 }
 .image-heigh{
-    height: 15rem;
+    height: 18rem;
     margin: 0;
     padding: 5px;
-    width: 
+    padding-top: 0px;
+  
     
+}
+.imageBox{
+    height: 8em;
+    width: 8px;
+    border: 1px solid black;
+    cursor: pointer;
+    display: inline-block;
+    background: linear-gradient(to bottom right, rgb(97, 101, 110),  rgb(38, 39, 43) );
+
+    
+}
+.imageBox2{
+    height: 5em;
+    width: 5px;
+    border: 1px solid black;
+    display: none;
+
+
+    
+}
+.imageDivider{
+    background-color: rgb(18, 18, 20);
+    color: rgb(68, 255, 21);
+    height: 3rem;
+    margin-bottom: 2px;
+}
+.imageDivider2{
+    background-color: rgb(38, 39, 43);
+    color: rgb(236, 14, 199);
+    height: 1rem;
+    margin-bottom: 0px;
+}
+.imageDivider3{
+    background-color: rgb(38, 39, 43);
+    color:whitesmoke;
+    height: 2rem;
+    margin-bottom: 0px;
+}
+.dropped{
+    border: 5px dashed white;
+    margin: 1em;
+    min-height: 8em;
+    padding: 1em;
+    width: 20em;
 }
