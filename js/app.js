@@ -1,8 +1,10 @@
 $('.imageBox').on('dragstart', function (e){
-    let data= e.dataTransfer.setData('text/plain');
-        console.log("si entra");
-    
-})
+    //Estás usuando jQuery así que event ya no es el event de la documentación, ese lo encuentras en originalEvent
+	//Aquí mando el src de la imagen, aunque tal vez hubieras querido mandar el ID, pero tus imagenes no tienen ID
+	//en el HTML y trato de hacer las modificaciones mínimas al código.
+    e.originalEvent.dataTransfer.setData('text/plain', $(this).attr('src'));
+	console.log("si entra");
+});
 
 
 // $(".imageBox").on("dragstart", function (e) {
@@ -20,10 +22,12 @@ $('.imageBox').on('dragstart', function (e){
 //     console.log("se esta arrastrando sobre");
 //  })
  
-//  $(".image-heigh").on("drop", function(e){
-//     e.preventDefault();
-//     let data = e.dataTransfer.getData('text')
-//     let element = document.getElementById(data);
-//     e.target.appendChild(element);
- 
-//  });
+$(".image-heigh").on("drop", function(e){
+     e.preventDefault();
+     //Estás usuando jQuery así que event ya no es el event de la documentación, ese lo encuentras en originalEvent
+     let data = e.originalEvent.dataTransfer.getData('text/plain')
+     // Para simular que fue drageado y dropeado, simplemente eliminamos el elemento, buscandolo por su src
+     let $element = $(`[src='${data}']`)[0].remove();
+     //Estas poniendo placeholders, así que es más sencillo simplemente reemplazar el url de la imagen
+     e.target.src=src;
+});
